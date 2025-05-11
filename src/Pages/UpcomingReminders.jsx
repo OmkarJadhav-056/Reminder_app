@@ -1,4 +1,3 @@
-// src/pages/UpcomingReminders.jsx
 import React, { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 
@@ -10,7 +9,7 @@ const UpcomingReminders = () => {
     const storedReminders = JSON.parse(localStorage.getItem('reminders')) || [];
     setReminders(storedReminders);
   }, []);
-
+        
   const handleReminderClick = (reminder) => {
     setSelectedReminder(reminder);
   };
