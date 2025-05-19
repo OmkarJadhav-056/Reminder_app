@@ -34,11 +34,12 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col items-center py-8 gap-7">
-      <h2 className="text-2xl mb-3">Login to the app</h2>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-7 w-80">
+    <div >
+      
+      <form onSubmit={handleSubmit} className="flex flex-col items-center py-6 sm:py-8 gap-5 sm:gap-7" >
+        <h2 className="text-xl sm:text-2xl mb-3">Login to the app</h2>
         <input
-          className="p-2 border-2 text-center rounded"
+          className="p-1.5 sm:p-2 border-2 text-center text-sm rounded w-46 sm:w-64"
           type="email"
           name="email"
           placeholder="Enter Email address"
@@ -46,7 +47,7 @@ const Login = () => {
           onChange={handleChange}
         />
         <input
-          className="p-2 border-2 text-center rounded"
+          className="p-1.5 sm:p-2 border-2 text-center text-sm rounded w-46 sm:w-64"
           type="password"
           name="password"
           placeholder="Enter Password"
@@ -56,7 +57,7 @@ const Login = () => {
         {error && <p className="text-red-500 text-sm">{error}</p>}
         <button
           type="submit"
-          className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="py-1.5 sm:py-2 px-3.5 sm:px-4 bg-blue-500 text-white rounded hover:bg-blue-600"
         >
           Login
         </button>

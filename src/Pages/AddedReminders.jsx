@@ -44,9 +44,9 @@ const AddedReminders = () => {
     });
 
   return (
-    <div className="p-4 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Added Reminders</h1>
-
+    <div className="p-8 sm:p-6 max-w-3xl mx-auto sm:max-lg:px-14">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-10 sm:mb-8 text-center">Added Reminders</h1>
+    
       {/* Filter Section */}
       <div className="mb-4">
         <label>Filter by Priority:</label>

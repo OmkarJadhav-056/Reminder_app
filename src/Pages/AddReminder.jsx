@@ -45,12 +45,12 @@ const AddReminder = () => {
   };
 
   return (
-    <div className="p-4 max-w-xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4 text-center">Add New Reminder</h2>
+    <div className="p-8 lg:p-5 sm:max-lg:px-10 max-w-xl mx-auto">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 mt-5 text-center">Add New Reminder</h2>
       
       {error && <p className="text-red-500 mb-2">{error}</p>}
       
-      <form onSubmit={handleSubmit} className="bg-white p-4 rounded shadow space-y-4">
+      <form onSubmit={handleSubmit} className="bg-white p-5 rounded shadow space-y-6 sm:space-y-4">
         <input
           type="text"
           name="title"

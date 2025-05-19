@@ -17,14 +17,14 @@ const Dashboard = () => {
     .slice(0, 10); // Next 10 upcoming
 
   return (
-    <div className="p-4 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6 text-center">Dashboard</h1>
+    <div className="p-8 sm:p-5 max-w-3xl mx-auto sm:max-lg:px-12">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">Dashboard</h1>
 
-      <div className="flex flex-wrap justify-end gap-3 mb-6">
+      <div className="flex flex-col sm:flex-row  sm:max-lg:justify-center justify-end gap-4 sm:gap-3 mb-9 sm:mb-7">
         <button
           className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
           onClick={() => navigate('/add-reminder')}
-        >
+        > 
           + Add Reminder
         </button>
         <button

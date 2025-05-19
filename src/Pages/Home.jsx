@@ -10,15 +10,15 @@ const Home = () => {
         <div>
             <div className=" w-full h-screen bg-amber-200 flex flex-col justify-center items-center gap-4">
                 <div className='flex items-center'>
-                    <h1 className='text-4xl'>Welcome</h1>
-                    <img className='h-14' src="https://static.vecteezy.com/system/resources/thumbnails/020/995/195/small_2x/3d-minimal-turn-on-notification-concept-new-update-reminder-new-notification-alert-a-bell-icon-ringing-3d-illustration-png.png" alt="" />
+                    <h1 className='text-3xl sm:text-4xl'>Welcome</h1>
+                    <img className='h-10 sm:h-14' src="https://static.vecteezy.com/system/resources/thumbnails/020/995/195/small_2x/3d-minimal-turn-on-notification-concept-new-update-reminder-new-notification-alert-a-bell-icon-ringing-3d-illustration-png.png" alt="" />
                 </div>
-                <div className="w-sm min-h-98 bg-amber-50 rounded-2xl">
+                <div className="w-70 sm:w-sm min-h-75 bg-amber-50 rounded-2xl">
                     {
                         isLogin?(<Login/>):(<SignUp/>)
                     }
 
-                    <p className="text-center mt-0 mb-6">
+                    <p className="text-sm sm:text-lg text-center mt-0 mb-4 sm:mb-6">
                         {isLogin ? "Don't have an account?" : "Already have an account?"}
                         <button onClick={() => setIsLogin(!isLogin)} className="ml-2 text-blue-500 underline">
                             {isLogin ? "Sign Up" : "Login"}

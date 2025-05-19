@@ -26,8 +26,8 @@ const UpcomingReminders = () => {
   };
 
   return (
-    <div className="p-4 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Upcoming Reminders</h1>
+    <div className="p-7 lg:p-5 max-w-3xl mx-auto sm:border sm:max-lg:px-12">
+      <h1 className="text-2xl font-bold mb-7 sm:mb-5 text-center">Upcoming Reminders</h1>
 
       {/* Calendar View - Placeholder */}
       <div className="grid grid-cols-7 gap-4 mb-4">
